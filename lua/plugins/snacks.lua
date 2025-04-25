@@ -29,13 +29,18 @@ return {
     { "[[",         function() Snacks.words.jump(-vim.v.count1) end, desc = "Prev Reference", mode = { "n", "t" } },
 
     -- Picker key maps
+    { "\\", function() Snacks.explorer() end, desc = "File Explorer" },
     { "<leader>ss", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
     { "<leader><space>", function() Snacks.picker.buffers() end, desc = "[ ] Find existing buffers" },
-    { "\\", function() Snacks.explorer() end, desc = "File Explorer" },
     { "<leader>sg", function() Snacks.picker.grep() end, desc = "[S]earch by [G]rep" },
-    { "<leader>sn", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
+    { "<leader>sn", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "[S]earch [N]eovim files" },
     { "<leader>sf", function() Snacks.picker.files() end, desc = "[S]earch [F]iles" },
     { "<leader>sp", function() Snacks.picker.pickers() end, desc = "[S]earch [P]ickers" },
     { "<leader>s.", function() Snacks.picker.recent() end, desc = "[S]earch Recent Files ('.' for repeat)" },
+    { "<leader>sk", function() Snacks.picker.keymaps() end, desc = "[S]earch [K]eymaps" },
+    { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "[S]earch current [W]ord", mode = { "n", "x" } },
+    { "<leader>sr", function() Snacks.picker.resume() end, desc = "[S]earch [R]esume" },
+    { "<leader>sh", function() Snacks.picker.help() end, desc = "[S]earch [H]elp" },
+    { "<leader>sd", function() Snacks.picker.diagnostics() end, desc = "[S]earch [D]iagnostics" },
   }
 }
