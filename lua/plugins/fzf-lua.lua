@@ -1,0 +1,50 @@
+return {
+  -- "ibhagwan/fzf-lua",
+  -- dependencies = {
+  --   "echasnovski/mini.icons", -- For icons
+  -- },
+  -- opts = {
+  -- },
+  -- keys = {
+  --   { "<leader>sh", function() require("fzf-lua").helptags() end, desc = "[S]earch [H]elp" },
+  --   { "<leader>sk", function() require("fzf-lua").keymaps() end, desc = "[S]earch [K]eymaps" },
+  --   { "<leader>sf", function() require("fzf-lua").files() end, desc = "[S]earch [F]iles" },
+  --   { "<leader>ss", function() require("fzf-lua").builtin() end, desc = "[S]earch [S]elect FZF" },
+  --   { "<leader>sw", function() require("fzf-lua").grep_cword() end, desc = "[S]earch current [W]ord" },
+  --   { "<leader>sg", function() require("fzf-lua").live_grep() end, desc = "[S]earch by [G]rep" },
+  --   { "<leader>sd", function() require("fzf-lua").diagnostics_document() end, desc = "[S]earch [D]iagnostics" },
+  --   { "<leader>sr", function() require("fzf-lua").resume() end, desc = "[S]earch [R]esume" },
+  --   { "<leader>s.", function() require("fzf-lua").oldfiles() end, desc = "[S]earch Recent Files" },
+  --   { "<leader><leader>", function() require("fzf-lua").buffers() end, desc = "[ ] Find existing buffers" },
+  --   { 
+  --     "<leader>/",
+  --     function()
+  --       require("fzf-lua").lgrep_curbuf({
+  --         prompt = "Current Buffer> ",
+  --         previewer = "builtin",
+  --       })
+  --     end,
+  --     desc = "[/] Fuzzily search in current buffer"
+  --   },
+  --   {
+  --     "<leader>s/",
+  --     function()
+  --       require("fzf-lua").live_grep({
+  --         grep_open_files = true,
+  --         prompt = "Live Grep in Open Files> ",
+  --       })
+  --     end,
+  --     desc = "[S]earch [/] in Open Files"
+  --   },
+  --   {
+  --     "<leader>sn",
+  --     function()
+  --       require("fzf-lua").files({
+  --         cwd = vim.fn.stdpath("config"),
+  --         prompt = "Neovim Config> ",
+  --       })
+  --     end,
+  --     desc = "[S]earch [N]eovim files"
+  --   },
+  -- },
+}
