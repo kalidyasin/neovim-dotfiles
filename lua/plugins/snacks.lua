@@ -42,5 +42,18 @@ return {
     { "<leader>sr", function() Snacks.picker.resume() end, desc = "[S]earch [R]esume" },
     { "<leader>sh", function() Snacks.picker.help() end, desc = "[S]earch [H]elp" },
     { "<leader>sd", function() Snacks.picker.diagnostics() end, desc = "[S]earch [D]iagnostics" },
+    { "<leader>s/", function() Snacks.picker.grep_buffers() end, desc = "[S]earch [/] in Open Files" },
+    {
+      "<leader>/",
+      function()
+        Snacks.picker.lines({
+          -- use the Select layout
+          layout = {
+            preset = "select",                     -- ⟵ preset defined in docs :contentReference[oaicite:0]{index=0} 
+          },
+        })
+      end,
+      desc = "[/] Fuzzily search in current buffer",
+    },
   }
 }
