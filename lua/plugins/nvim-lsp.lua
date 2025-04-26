@@ -67,6 +67,8 @@ return {
           -- or a suggestion from your LSP for this to activate.
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction', { 'n', 'x' })
 
+          map('<leader>cd', vim.lsp.buf.hover, '[C]ode [D]ocumentation', { 'n', 'x' })
+
           -- Find references for the word under your cursor.
           map('gr', function() Snacks.picker.lsp_references() end, '[G]oto [R]eferences')
 
