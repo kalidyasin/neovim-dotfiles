@@ -23,12 +23,13 @@ return {
         { section = 'header' },
         { section = "keys", indent = 1,gap = 1, padding = 1 },
         { section = 'recent_files', icon = ' ', title = 'Recent Files', cwd = true, indent = 3, padding = 2 },
+        -- { icon = " ", title = "Projects", section = "projects", indent = 3, padding = 2 },
         { section = "startup" },
-        { pane = 2, padding = 4 },
+        { pane = 2, padding = 2 },
         {
           pane = 2,
           section = "terminal",
-          cmd = "ascii-image-converter ~/.config/nvim/img/codeops-hq-logo-small.png -C -b",
+          cmd = "~/.config/nvim/img/ascii-image-converter ~/.config/nvim/img/CodeOpsHQLogoWithLightBackgraung.jpg -c -b -f --dither",
           -- indent = 1,
           height = 30,
         }
