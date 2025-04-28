@@ -30,7 +30,7 @@ return { -- Autocompletion
         opts = {},
       },
       'folke/lazydev.nvim',
-      -- 'Exafunction/codeium.nvim',
+      'Exafunction/codeium.nvim',
     },
     --- @module 'blink.cmp'
     --- @type blink.cmp.Config
