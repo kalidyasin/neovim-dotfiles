@@ -29,8 +29,10 @@ return {
         {
           pane = 2,
           section = "terminal",
-          cmd = "~/.config/nvim/img/ascii-image-converter ~/.config/nvim/img/CodeOpsHQLogoWithLightBackgraung.jpg -c -b -f --dither",
-          -- indent = 1,
+          -- cmd = "~/.config/nvim/img/ascii-image-converter ~/.config/nvim/img/CodeOpsHQLogoWithLightBackgraung.jpg -c -b --dither",
+          cmd = "~/.config/nvim/img/ascii-image-converter ~/.config/nvim/img/logo.jpg -c -b --dither",
+          random = 10,
+          indent = 4,
           height = 30,
         }
       },
