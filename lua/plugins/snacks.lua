@@ -4,7 +4,7 @@ return {
   lazy = false,
   ---@type snacks.Config
   opts = {
-    -- bigfile = { enabled = true },
+    bigfile = { enabled = true },
     dashboard = {
       enabled = true,
       preset = {
@@ -36,17 +36,20 @@ return {
       },
     },
     -- explorer = { enabled = true },
+    image = { enabled = true },
     indent = { enabled = true },
     -- input = { enabled = true },
     lazygit = { enabled = true },
     picker = { enabled = true },
     notifier = { enabled = true },
     -- git = { enabled = true },
-    -- quickfile = { enabled = true },
+    quickfile = { enabled = true },
     -- scope = { enabled = true },
     -- scroll = { enabled = true },
-    --  scratch = { enabled = true },
+    scratch = { enabled = true },
     -- statuscolumn = { enabled = true },
+    terminal = { enabled = true },
+    -- toggle = { enabled = true },
     -- words = { enabled = true },
   },
   keys = {
