@@ -1,5 +1,6 @@
 return { 
   "echasnovski/mini.statusline",
+  event = "VeryLazy",
   version = false,
   -- opts = {
   --   use_icons = vim.g.have_nerd_font,
