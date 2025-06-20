@@ -11,6 +11,9 @@ return {
 			virtual_text = {
 				enabled = true,
 			},
+			workspace_root = {
+				use_lsp = true,
+			},
 		})
 	end,
 }
