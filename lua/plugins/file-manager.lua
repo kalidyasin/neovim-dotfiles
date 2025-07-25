@@ -5,8 +5,13 @@ return {
 	opts = {},
 	-- Optional dependencies
 	dependencies = { { "echasnovski/mini.icons", opts = {} } },
-	lazy = false,
-	key = {
-		vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" }),
+	keys = {
+		{
+			"-",
+			function()
+				require("oil").open_float()
+			end,
+			desc = "Open parent directory",
+		},
 	},
 }
