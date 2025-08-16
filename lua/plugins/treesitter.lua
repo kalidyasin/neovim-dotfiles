@@ -52,10 +52,10 @@ return {
             swap = {
               enable = true,
               swap_next = {
-                ["<leader>a"] = { query = "@parameter.inner", desc = "Swap the node under the cursor with the next" },
+                ["<leader>xs"] = { query = "@parameter.inner", desc = "Swap the node under the cursor with the next" },
               },
               swap_previous = {
-                ["<leader>A"] = { query = "@parameter.inner", desc = "swap the node under the cursor with the previous" },
+                ["<leader>xS"] = { query = "@parameter.inner", desc = "swap the node under the cursor with the previous" },
               },
             },
         },
