@@ -26,8 +26,8 @@ return {
             deepseek = {
                 __inherited_from = "openai",
                 endpoint = "https://api.deepseek.com",
-                -- model = "deepseek-reasoner",
-                model = "deepseek-chat",
+                model = "deepseek-reasoner",
+                -- model = "deepseek-chat",
                 api_key_name = "DEEPSEEK_API_KEY",
                 -- timeout = 30000, -- Timeout in milliseconds
                 -- extra_request_body = {
