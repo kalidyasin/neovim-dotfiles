@@ -2,6 +2,7 @@ return {
 {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
+    event = "VeryLazy",
     dependencies = {
       -- Automatically install LSPs and related tools to stdpath for Neovim
       -- Mason must be loaded before its dependents so we need to set it up here.
@@ -157,7 +158,7 @@ return {
       vim.diagnostic.config {
         severity_sort = true,
         float = { border = 'rounded', source = 'if_many' },
-        underline = { severity = vim.diagnostic.severity.ERROR },
+        -- underline = { severity = vim.diagnostic.severity.ERROR },
         signs = vim.g.have_nerd_font and {
           text = {
             [vim.diagnostic.severity.ERROR] = '󰅚 ',
@@ -212,6 +213,8 @@ return {
         -- Php Language Server
         -- phpactor = {},
         intelephense = {},
+
+        -- laravel_ls = {},
 
         lua_ls = {
           -- cmd = { ... },

@@ -4,9 +4,14 @@ return {
 	---@type oil.SetupOpts
 	opts = {},
 	-- Optional dependencies
-	dependencies = { { "echasnovski/mini.icons", opts = {} } },
-	lazy = false,
-	key = {
-		vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" }),
+	dependencies = { { "nvim-mini/mini.icons", opts = {} } },
+	keys = {
+		{
+			"-",
+			function()
+				require("oil").open_float()
+			end,
+			desc = "Open parent directory",
+		},
 	},
 }
