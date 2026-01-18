@@ -1,6 +1,6 @@
 return {
   "nvim-mini/mini.pairs",
-  event = "VeryLazy",
+  event = "InsertEnter",
   version = false,
   opts = {}
 }
